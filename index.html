@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>HTML Forms Homework</h2>
+    <!-- 1. Exploring New HTML5 Input Types -->
+    <!-- Task 1: Email Input -->
+    <form>
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required aria-required="true" aria-describedby="email-desc">
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    
+    <!-- Task 2 & Task 4: Quantity Input -->
+    <form>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="1, 2, 3" step="1" min="1" max="10">
+    </form>
+    <br>
+    
+    <!-- Task 3: Date Input -->
+    <form>
+        <label for="date">Please Select a Date:</label>
+        <input type="date" id="date" name="date">
+    </form>
+    <br>
+    
+    <!-- 2. Building a Comprehensive Web Form -->
+    <form>
+        <fieldset>
+            <legend>Please select your favorite programming language:</legend>
+            <select name="prog-lang" id="prog-lang">
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="sql">SQL</option>
+            </select>
+        </fieldset>
+    </form>
+    <br>
+    
+    <form>
+        <fieldset>
+            <legend>Select your level of expertise:</legend>
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" id="expert" name="experience" value="expert">
+            <label for="expert">Expert</label>
+        </fieldset>
+    </form>
+    <br>
+    
+    <form>
+        <fieldset>
+            <legend>Select your preferred development platforms:</legend>
+            <label for="web-platform">Web:</label>
+            <input type="checkbox" id="web-platform" name="web" value="yes" aria-label="Web Development Platform">
+
+            <label for="mobile-platform">Mobile:</label>
+            <input type="checkbox" id="mobile-platform" name="mobile" value="yes" aria-label="Mobile Development Platform">
+
+            <label for="desktop-platform">Desktop:</label>
+            <input type="checkbox" id="desktop-platform" name="desktop" value="yes" aria-label="Desktop Development Platform">
+        </fieldset>
+    </form>
+</body>
+</html>
